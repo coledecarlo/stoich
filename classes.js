@@ -18,6 +18,7 @@ for(let element of periodic_table_data.elements){
 }
 
 
+
 /*immutable*/class IntegerValue{
     /**@returns {void}*/constructor(/*number*/ x) {
         /**@type {number}*/this.value = Math.trunc(x);
