@@ -74,6 +74,12 @@ reactionTable.appendChild(reaction.getTableHTML());
 
 document.body.appendChild(reactionTable);
 
+reactButton.addEventListener("click", function(){
+    reactionTable.innerHTML = "";
+    reaction.react();
+    reactionTable.appendChild(reaction.getTableHTML());
+});
+
 let modal = document.createElement("div");
 modal.style.display = "none";
 modal.style.position  = "fixed";
